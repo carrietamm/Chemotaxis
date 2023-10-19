@@ -13,6 +13,8 @@ void setup()
 void draw()
 {
   background(0);
+  fill(247, 231, 137);
+  rect(470,470, 50,50);
     for(int a = 0; a < carrie.length; a++){
     carrie[a].show();
     carrie[a].walk();
@@ -39,6 +41,12 @@ class Walker
     else{
       g = g + (int)(Math.random()*10)-3;
     }
+    if (g >=470){
+            g = 470;
+    }
+        if (f >=470){
+            f = 470;
+    }
   }
   void show()
   {
@@ -47,7 +55,7 @@ class Walker
    int ran2 = (int)(Math.random()*240)+130;
    int ran3 = (int)(Math.random()*240)+130;
    fill(ran1,ran2,ran3);
-   ellipse(f,g, 20, 20); 
+   ellipse(f,g, 10, 20); 
    
 }
   }
