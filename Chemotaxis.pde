@@ -5,7 +5,7 @@ void setup()
 {
   size(500,500);
   //  bob = new Walker();
-    carrie = new Walker[10];
+    carrie = new Walker[300];
     for(int a = 0; a < carrie.length; a++){
       carrie[a] = new Walker();
   }
